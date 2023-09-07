@@ -1,5 +1,5 @@
 #include <stdio>
-/**
+/*
 *main - Entry point
 *
 *Return=0 (Success)
