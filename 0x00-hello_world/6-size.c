@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #include <stdio.h>
-=======
-i#include <stdio.h>
->>>>>>> refs/remotes/origin/main
 /*
 *main - Entry point
 *
