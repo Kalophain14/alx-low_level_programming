@@ -1,14 +1,11 @@
-#include<studio.h>
+#include <stdio.h>
 /**
-* using put to put a string
-* put automitcally append to a new line "\n"
+* main-Entry point
 *
-* /
-
-int main (void)
+* Return:0 (Success)
+*/
+int main(void)
 {
-
-  puts("This function doesn't need newline");
-  return (0);
-
+puts("Programming is like building a multilingual puzzle");
+return (0);
 }
