@@ -1,5 +1,4 @@
 #include "main.h"
-#include "more_numbers.h"
 
 /**
 * main - check the code
