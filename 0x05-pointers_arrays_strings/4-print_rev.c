@@ -7,7 +7,7 @@
 
 void print_rev(char *s)
 {
-	int r; /**length 64 characters*/
+	int r = 0; /**length 64 characters*/
 	int t; /**for loop reverse*/
 
 	while (*s != '\0') /**Print out the length of the string*/
@@ -20,6 +20,5 @@ void print_rev(char *s)
 		_putchar(*s);
 		s--;
 	}
-
-	_putchar('\n');
+_putchar('\n');
 }
