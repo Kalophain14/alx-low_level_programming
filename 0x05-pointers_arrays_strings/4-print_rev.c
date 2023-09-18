@@ -16,7 +16,7 @@ void print_rev(char *s)
 		s++;
 	}
 	s--;
-	for (t = r; t >= 0; t--) /**prints out the *s pointer in reverse*/
+	for (t = r; t > 0; t--) /**prints out the *s pointer in reverse*/
 	{
 		_putchar(*s);
 		s--;
