@@ -13,11 +13,9 @@ char *_strcpy(char *dest, char *src)
 	int r;
 
 	for (r = 0; src[r] != '\0'; r++)
-	
 		dest[r] = src[r]; /**pointer src array is equal to pointer dest*/
 
 	dest[r] = '\0'; /**it will include the null terminator into the dest array*/
 
 	return (dest);
-	
 }
