@@ -19,5 +19,5 @@ char *_strcat(char *dest, char *src)
 		srclen++;
 	for (r = 0; r <= srclen; r++) /**equals the length of src array*/
 		dest[destlen + r] = src[r]; /**copy & concatenates index 0 of src to dest*/
-return(dest);
+return (dest);
 }
