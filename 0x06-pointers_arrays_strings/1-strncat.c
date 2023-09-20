@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (r = 0; r < n && *src != '\0'; r++) /** r < n and strc not '\0'*/
 	{
-		dest[length + r] = *src; /**appends last two index of src to dest*/
+		dest[length + r] = *src; /**appends n(W) index of src to dest*/
 		src++;
 	}
 	dest[length + r] = '\0'; /**Adds the '\0' into dest*/
