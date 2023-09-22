@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * leet - a function that encodes a string into 1337
- * @n: input value
- * Return: p value
- */
+* leet - a function that encodes a string into 1337
+* @p: pointer to the original value
+* Return: p value
+*/
 char *leet(char *p)
 {
 	int r;
