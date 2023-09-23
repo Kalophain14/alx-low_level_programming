@@ -8,9 +8,9 @@
 
 char *_strchr(char *s, char c)
 {
-	int r = 0;
+	int r;
 
-	for (; s[r] >= '\0'; r++) /**seperate until r isn't null terminator*/
+	for (r = 0; s[r] >= '\0'; r++) /**seperate until r isn't null terminator*/
 	{
 		if (s[r] == c)
 			return (&s[r]); /**searches for character 'l' that is == to c*/
