@@ -8,10 +8,10 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int r = 0;
+	int r;
 	int t = n;
 
-	for (; r < t; r++) /** ; end of statements & separate statements */
+	for (r = 0; r < t; r++)
 	{
 		dest[r] = src[r]; /**assigns memory area of dest to src as n decrements*/
 		n--;
