@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - fibonacci 
+ * main - fibonacci
  *
  * Return:  Always 0 (Success)
  */
