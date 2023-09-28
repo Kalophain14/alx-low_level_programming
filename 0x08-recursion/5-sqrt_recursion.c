@@ -14,7 +14,6 @@ int _sqrt_recursion(int n)
 		return (-1); /**error*/
 	}
 	return (new_sqrt_recursion(n, 0));
-	
 }
 
 /**
