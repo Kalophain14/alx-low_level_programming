@@ -8,35 +8,32 @@
  */
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	int a = 0;
+	int counter = 0;
+	int n = 0;
+	int length = 0;
+	int f = 0;
+	int num = 0;
 
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
+	for (a = 0; s[length] != '\0'; length++;) /**length of the string*/
 
-	while (s[len] != '\0')
-		len++;
-
-	while (i < len && f == 0)
+	while (a < length && f == 0)
 	{
-		if (s[i] == '-')
-			++d;
+		if (s[a] == '-') /**finds - using counter*/
+			++counter;
 
-		if (s[i] >= '0' && s[i] <= '9')
+		if (s[a] >= '0' && s[a] <= '9') /**goes through ASCII to find intergers*/
 		{
-			digit = s[i] - '0';
-			if (d % 2)
-				digit = -digit;
-			n = n * 10 + digit;
+			num = s[a] - '0';
+			if (counter % 2)
+				num = -num;
+			n = n * 10 + num;
 			f = 1;
-			if (s[i + 1] < '0' || s[i + 1] > '9')
+			if (s[a + 1] < '0' || s[a + 1] > '9')
 				break;
 			f = 0;
 		}
-		i++;
+		a++;
 	}
 
 	if (f == 0)
