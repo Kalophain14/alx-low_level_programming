@@ -15,8 +15,8 @@ int _atoi(char *s)
 	int f = 0;
 	int num = 0;
 
-	for (a = 0; s[length] != '\0'; length++;) /**length of the string*/
-
+	while (s[length] != '\0') /**length of the string*/
+		length++;
 	while (a < length && f == 0)
 	{
 		if (s[a] == '-') /**finds - using counter*/
@@ -33,7 +33,7 @@ int _atoi(char *s)
 				break;
 			f = 0;
 		}
-		a++;
+	a++;
 	}
 
 	if (f == 0)
