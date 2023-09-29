@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
  * check_num - check - string there are digit
  * @str: array string
@@ -52,14 +53,13 @@ int main(int argc, char *argv[])
 
 		else /**checks if each number contains symbols that are not digits*/
 		{
-			printf("Error\n"); 
+			printf("Error\n");
 			return (1);
 		}
-
-		count++;
+	count++;
 	}
 
-	printf("%d\n", sum);
+printf("%d\n", sum);
 
-	return (0);
+return (0);
 }
