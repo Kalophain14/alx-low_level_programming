@@ -32,11 +32,11 @@ char *argstostr(int ac, char **av)
 		{
 			result[p] = av[r][t];
 			p++;
-	/**concatenate & storing each character in result*/
+			/**concatenate & storing each character in result*/
 		}
-		result[p++] = '\n';
-		/**beforen r++ create new line*/
+	result[p++] = '\n';
+	/**beforen r++ create new line*/
 	}
-	result[p] = '\0';
-	return (result);
+result[p] = '\0';
+return (result);
 }
