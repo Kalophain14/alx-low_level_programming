@@ -31,13 +31,13 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (r = 0; r < 5 && num >= 0; r++) /**elnghth of string until num > 0*/
+	for (r = 0; r < 5 && num >= 0; r++) /**lenghth of string until num > 0*/
 	{
-		while (num >= coins[r])
+		while (num >= coins[r]) /**index of num inserted in coins*/
 		{
 			output++;
 			num -= coins[r];
-		}
+		} 
 	}
 
 	printf("%d\n", output);
