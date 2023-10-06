@@ -18,8 +18,8 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 	/**allocating new memory*/
-	size = max - min;
-	result = malloc(sizeof(int) * size + 1);
+	size = (max - min) + 1;
+	result = malloc(sizeof(int) * size);
 	if (result == NULL)
 		return (NULL);
 	for (r = 0; min <= max; r++)
