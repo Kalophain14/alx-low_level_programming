@@ -4,21 +4,28 @@
 
 /**
  * print_numbers - prints numbers
- * @seperator: the string to be printed between numbers
- * @n: number of integers passed 
+ * @separator: the string to be printed between numbers
+ * @n: number of integers passed
  * Return: number of elements in the string
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int result = 0;
-	int r;
+	unsigned int r;
 	va_list arg;
 
-	if (*seperator == NULL)
-		return (NULL);
-	for (r = 0 r < n; r++)
-	{
+	va_start(arg, n);
 
+	for (r = 0; r < n; r++)
+	{
+		if (separator != NULL)
+		{
+			printf("%d", va_arg(arg, int));
+			printf("%s", separator);
+		}
+		else
+			printf("%d", va_arg(arg, int));
 	}
+	printf("\n");
+	va_end(arg);
 }
