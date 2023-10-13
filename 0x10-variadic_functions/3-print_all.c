@@ -3,8 +3,8 @@
 #include "variadic_functions.h"
 
 /**
- * prints_all - prints anything
- * @format - list of all types of arguemnets
+ * print_all - prints anything
+ * @format: list of all types of arguemnets
  */
 
 void print_all(const char * const format, ...)
