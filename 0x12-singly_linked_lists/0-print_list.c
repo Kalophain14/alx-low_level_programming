@@ -10,9 +10,9 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *temporary /**declares pointer to structlist*/
+	const list_t *temporary; /**declares pointer to structlist*/
 	size_t r = 0; /**counter*/
-	
+
 	/**checks if pointer h and string isnt null*/
 	if (h && h->str == NULL)
 	{
