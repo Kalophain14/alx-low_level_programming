@@ -26,7 +26,7 @@ This C programming guide emphasizes:
    - Utilize command-line arguments.
    
 8. **Malloc:**
-   - Dynamic memory allocation using malloc.
+   - Dynamic memory allocation using malloc, realloc, calloc and free.
    
 9. **Preprocessor:**
    - Work with preprocessor directives.
