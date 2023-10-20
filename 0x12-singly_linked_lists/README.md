@@ -24,8 +24,6 @@ Intro: Singly linked lists, core in CS, dynamic storage, efficient add/remove. G
 
 Project: Efficient, critical for data structures, C expertise showcase.
 
-**Authors:** [Your Name]
-
 ## Authors
 
 - [@Kalophain14](https://github.com/Kalophain14)
