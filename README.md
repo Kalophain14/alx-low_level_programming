@@ -45,7 +45,7 @@ This guide provides practical knowledge for low-level C programming.
 
 ## Used By
 
-This project is used by the following companies:
+This repo is used by the following companies:
 
 - ALX Africa
 - Holberton School
