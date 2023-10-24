@@ -36,6 +36,8 @@ This C programming guide emphasizes:
     
 11. **Linked Lists:**
     - Build and manipulate linked lists for data storage.
+12. **Bit Manipulation
+    - bitwise operations, manipulating individual bits (0 or 1) within binary numbers.
 
 This guide provides practical knowledge for low-level C programming.
 ## Authors
