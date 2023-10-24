@@ -1,8 +1,16 @@
-#ifndef list_h
-#define list_h
+#ifndef lists_h
+#define lists_h
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
+
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+}listint_t;
 
 int _putchar(char c);
 size_t print_listint(const listint_t *h);
