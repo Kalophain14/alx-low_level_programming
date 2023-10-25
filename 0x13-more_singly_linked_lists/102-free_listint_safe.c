@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - Frees a linked list with handling for circular references.
+ * free_listint_safe - Frees a linked list for circular references.
  * @h: Pointer to the first node in the linked list.
  * Return: Number of elements in the freed list.
  */
