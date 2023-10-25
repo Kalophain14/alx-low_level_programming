@@ -20,7 +20,7 @@ listint_t *reverse_listint(listint_t **head)
 		*head = current_next;            /**Move the 'head' pointer*/
 	}
 
-	*head = previous; /**Update the head to point to first node of the reversed list*/
+	*head = previous; /**Updates head to point to first node of reversed list*/
 
 	return (*head);
 }
