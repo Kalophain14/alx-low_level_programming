@@ -4,7 +4,7 @@
 Example:
 1010
 0011
-> 0010
+*0010
 
 2. Bitwise OR (|): This operator performs a bitwise OR operation. It sets a bit to 1 if either or both input bits are 1.
 Example:
