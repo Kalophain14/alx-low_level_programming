@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _pow - Computes x raised to the power of y.
  * @x: The mantissa.
