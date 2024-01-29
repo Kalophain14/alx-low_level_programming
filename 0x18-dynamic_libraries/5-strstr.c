@@ -22,5 +22,5 @@ char *_strstr(char *haystack, char *needle)
 		if (needle[t] == '\0') /**If a match is found we end the string*/
 			return (haystack + r);
 	}
-return ('\0');
+return (0);
 }
