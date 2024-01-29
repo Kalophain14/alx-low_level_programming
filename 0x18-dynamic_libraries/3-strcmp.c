@@ -1,27 +1,23 @@
-#include "main.h"
-#include <stdio.h>
-#include <string.h>
-
 /**
-* _strcmp - a function that compares strings.
-* @s1: first string compared
-* @s2: second string compared to s1
-* Return: int
-*/
-
+ * _strcmp - Compare one string to another.
+ * @s1: The first string and the destination.
+ * @s2: The second string.
+ * Return: -1 if s1 < s2
+ *	  1 if s1 > s2
+ *	  0 if s1 = s2
+ */
 int _strcmp(char *s1, char *s2)
 {
-	int r;
+	int i = 0, m = 0, n = 0, res = 0;
 
-	for (r = 0; s1[r] != '\0' || s2[r] != '\0'; r++)
-	{
-		if (s1[r] != s2[r])
-		{
-			if (s1[r] < s2[r])
-				return (s1[r] - s2[r]);
-			else if (s1[r] > s2[r])
-				return (s1[r] - s2[r]);
-		}
-	}
-	return (0);
+	for (i = 0; s1[i] != '\0'; i++)
+		m += (int)s1[i++];
+	for (i = 0; s2[i] != '\0'; i++)
+		n += (int)s2[i++];
+	if (m > n)
+		res = -15;
+	else if (m < n)
+		res = 15;
+	return (res);
 }
+

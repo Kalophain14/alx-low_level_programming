@@ -1,35 +1,41 @@
-#include "main.h"
+/**
+ * find - Test if a byte is in a string.
+ * @str: The string.
+ * @c: The character to look for.
+ * Return: 1 if `c` occurs in `str`.
+ *	   0 otherwise.
+ */
+int find(char *str, char c)
+{
+	int i = 0, res = -1;
+
+	do {
+		if (str[i] == c)
+			res = i;
+		i++;
+	} while (res == -1 && str[i] != '\0');
+	if (res == -1 && c == str[i])
+		res = i;
+	return (res);
+}
 
 /**
- * _strspn - Entry point
- * @s: pointer from source
- * @accept: pointer to source
- * Return: Number of bytes in the initial segment of s
- * that consist only of bytes from accept.
+ * _strspn - Gets the length of a prefix substring.
+ * @s: The main string.
+ * @accept: The prefix substring.
+ * Return: The number of bytes in `s` which consist only of bytes in `accept`.
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0; /**Number of bytes*/
-	int r, found;
+	unsigned int res = 0;
+	int i = 0;
 
-	for (r = 0; s[r] != '\0'; r++)
-	{
-		int a;
-
-		found = 0; /**Initialize found flag for each character in s*/
-
-		for (a = 0; accept[a] != '\0'; a++)
-		{
-			if (s[r] == accept[a]) /**Checks if s[r] exists in accept*/
-		{
-			n++;
-
-			found = 1; /**Set found flag to 1 if a match is found*/
-			break; /**Break out of the accept loop*/
-		}
-		}
-		if (!found) /**If no match is found in accept, exit the outer loop*/
-			break;
-		}
-	return (n);
+	do {
+		if (find(s, accept[i]) >= 0)
+			res++;
+		i++;
+	} while (accept[i] != '\0');
+	if (find(s, accept[i]) >= 0)
+		res++;
+	return (res);
 }
